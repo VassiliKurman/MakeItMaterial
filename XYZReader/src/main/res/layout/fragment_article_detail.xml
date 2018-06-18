@@ -1,11 +1,15 @@
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
 <com.example.xyzreader.ui.DrawInsetsFrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/draw_insets_frame_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-
-
 
     <com.example.xyzreader.ui.ObservableScrollView
         android:id="@+id/scrollview"
@@ -27,7 +31,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/detail_photo_height"
                     android:scaleType="centerCrop"
-                    android:contentDescription="Book image" />
+                    android:contentDescription="@string/image_description" />
 
                 <View
                     android:layout_width="match_parent"
@@ -81,7 +85,7 @@
 
                 <TextView
                     android:id="@+id/article_body"
-                    style="?android:attr/textAppearanceMedium"
+
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/detail_inner_horiz_margin"
@@ -89,7 +93,6 @@
                     android:paddingBottom="@dimen/detail_body_bottom_margin"
                     android:textColor="@color/theme_main_text"
                     android:textColorLink="@color/theme_accent"
-                    android:textSize="@dimen/detail_body_text_size"
                     android:lineSpacingMultiplier="@fraction/detail_body_line_spacing_multiplier" />
 
             </com.example.xyzreader.ui.MaxWidthLinearLayout>
@@ -103,7 +106,7 @@
         android:layout_gravity="bottom|end"
         app:pressedTranslationZ="12dp"
 
-        android:layout_marginRight="@dimen/fab_margin"
+        android:layout_marginEnd="@dimen/fab_margin"
         android:layout_marginBottom="@dimen/fab_margin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -112,3 +115,4 @@
         android:contentDescription="@string/action_share" />
 
 </com.example.xyzreader.ui.DrawInsetsFrameLayout>
+</android.support.design.widget.CoordinatorLayout>
